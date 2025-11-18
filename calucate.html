@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fff;
+      margin: 0;
+    }
+    .title {
+      text-align: center;
+      margin-top: 45px;
+      font-size: 2em;
+      color: #106860;
+      font-weight: bold;
+    }
+    .calculator-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 32px;
+    }
+    .calculator {
+      background: #fff;
+      padding: 28px 32px 34px;
+      border-radius: 11px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.09);
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .display {
+      width: 100%;
+      height: 41px;
+      margin-bottom: 16px;
+      border-radius: 6px;
+      border: 1px solid #e3e3e3;
+      background: #fafafa;
+      padding: 8px;
+      font-size: 1.2em;
+      pointer-events: none;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 54px);
+      grid-template-rows: repeat(4, 54px);
+      gap: 12px 13px;
+      justify-content: center;
+    }
+    .btn {
+      background: #fff;
+      border-radius: 8px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: none;
+      box-shadow: 0 1px 4px #e3e3e3;
+      cursor: pointer;
+      transition: background .25s;
+    }
+    .btn:active {
+      background: #f2f2f2;
+    }
+    .btn.op {
+      background: #111;
+      color: #fff;
+      border: none;
+    }
+    .btn.clear {
+      background: #ff5757;
+      color: #fff;
+      border: none;
+    }
+  </style>
+<body>
+      <div class="title">Masai Calculator</div>
+  <div class="calculator-container">
+    <div class="calculator">
+      <input class="display" type="text" readonly value="">
+      <div class="grid">
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn op">+</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn op">-</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn op">x</button>
+        <button class="btn clear">C</button>
+        <button class="btn">0</button>
+        <button class="btn op">=</button>
+        <button class="btn op">/</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorful Grid Layout</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 180px);
+      grid-template-rows: repeat(3, 120px);
+      gap: 12px;
+      margin: 40px auto;
+      width: max-content;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+    }
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    .item1 { background: #00c6ef; }
+    .item2 { background: #ff4f13; }
+    .item3 { background: #4c69c3; }
+    .item4 { background: #ffdd00; color: #373737;}
+    .item5 { background: #8d36d7; }
+    .item6 { background: #36c727; }
+    .item7 { background: #fe906a; }
+    .item8 { background: #19b3b3; }
+    .item9 { background: #820506; }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item item2">2.</div>
+    <div class="grid-item item3">3.</div>
+    <div class="grid-item item4">4.</div>
+    <div class="grid-item item5">5.</div>
+    <div class="grid-item item6">6.</div>
+    <div class="grid-item item1">1.</div>
+    <div class="grid-item item7">7.</div>
+    <div class="grid-item item8">8.</div>
+    <div class="grid-item item9">9.</div>
+  </div>
+</body>
+</html>
