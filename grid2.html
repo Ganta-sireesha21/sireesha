@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Masai Investors Using Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      font-size: 2em;
+      text-align: left;
+      margin: 20px 0 10px 20px;
+      color: #222;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 30px;
+      justify-items: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      width: 230px;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 15px;
+      transition: box-shadow .2s;
+    }
+    .card img.profile {
+      margin-top: 16px;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .card .name {
+      font-size: 1.12em;
+      font-weight: bold;
+      color: #222;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+    .card .position {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .card .logo {
+      margin-top: 8px;
+      width: 90px;
+      height: 35px;
+      object-fit: contain;
+      display: block;
+    }
+    @media (max-width:900px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width:600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .card {
+        width: 85vw;
+      }
+    }
+    @media (max-width: 1023px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  </style>
+</head>
+<body>
+  <h1>Masai Investors Using Grid</h1>
+  <div class="container">
+    <div class="card">
+      <img class="profile" src="Vijay_Shekhar_Sharma_Paytm.png" alt="Vijay Shekhar Sharma" />
+      <span class="name">Vijay Shekhar Sharma</span>
+      <span class="position">Founder & CEO</span>
+      <img class="logo" src="https://cdn.masaischool.com/masai-website/paytm_rect_06df45a24f.svg" alt="PAYTM" />
+    </div>
+    <div class="card">
+      <img class="profile" src="https://cdn.masaischool.com/masai-website/Rectangle_427_637d69bb57.png" alt="Kunal Shah" />
+      <span class="name">Kunal Shah</span>
+      <span class="position">Founder</span>
+      <img class="logo" src="https://cdn.masaischool.com/masai-website/cred_0a47d7b4f8.png" alt="CRED" />
+    </div>
+    <div class="card">
+      <img class="profile" src="https://cdn.masaischool.com/masai-website/amrish_rau_pine_labs_144e5e587c.jpg" alt="Amrish Rau" />
+      <span class="name">Amrish Rau</span>
+      <span class="position">CEO</span>
+      <img class="logo" src="https://cdn.masaischool.com/masai-website/pine_labs_0aa2407434.png" alt="Pine Labs" />
+    </div>
+    <div class="card">
+      <img class="profile" src="https://cdn.masaischool.com/masai-website/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="Sampad Swain" />
+      <span class="name">Sampad Swain</span>
+      <span class="position">Co-Founder & CEO</span>
+      <img class="logo" src="https://cdn.masaischool.com/masai-website/instamojo_8763e704f7.png" alt="Instamojo" />
+    </div>
+    <div class="card">
+      <img class="profile" src="https://cdn.masaischool.com/masai-website/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg" alt="Ankush Sachdeva" />
+      <span class="name">Ankush Sachdeva</span>
+      <span class="position">Co-Founder & CEO</span>
+      <img class="logo" src="https://cdn.masaischool.com/masai-website/sharechat_rect_73d95cd4e1.svg" alt="ShareChat" />
+    </div>
+    <div class="card">
+      <img class="profile" src="https://cdn.masaischool.com/masai-website/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg" alt="Bhanu Pratap Singh" />
+      <span class="name">Bhanu Pratap Singh</span>
+      <span class="position">Co-Founder & CTO</span>
+      <img class="logo" src="https://cdn.masaischool.com/masai-website/sharechat_rect_73d95cd4e1.svg" alt="ShareChat" />
+    </div>
+    <div class="card">
+      <img class="profile" src="https://cdn.masaischool.com/masai-website/farid_ahsan_sharechat_1251f28141.png" alt="Farid Ahsan" />
+      <span class="name">Farid Ahsan</span>
+      <span class="position">Co-Founder & COO</span>
+      <img class="logo" src="https://cdn.masaischool.com/masai-website/sharechat_rect_73d95cd4e1.svg" alt="ShareChat" />
+    </div>
+    <div class="card">
+      <img class="profile" src="https://cdn.masaischool.com/masai-website/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg" alt="Amit Kumar Agarwal" />
+      <span class="name">Amit Kumar Agarwal</span>
+      <span class="position">Founder & CEO</span>
+      <img class="logo" src="https://cdn.masaischool.com/masai-website/nobroker_rect_28c9778c30.svg" alt="NoBroker" />
+    </div>
+  </div>
+</body>
+</html>
