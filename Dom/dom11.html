@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Assignment</title>
+</head>
+<body>
+  <h1 id="mainHeading">Hello Students</h1>
+  <p>This is paragraph one.</p>
+  <p>This is paragraph two.</p>
+  <p>This is paragraph three.</p>
+  <div class="container">
+    <p>Content inside container</p>
+  </div>
+  <script>
+    const heading = document.getElementById("mainHeading");
+    heading.textContent = "Welcome to the DOM World!";
+    const paragraphs = document.getElementsByTagName("p");
+    for (let p of paragraphs) {
+      p.style.color = "blue";
+    }
+    const containerDiv = document.querySelector(".container");
+    containerDiv.style.backgroundColor = "yellow";
+  </script>
+
+</body>
+</html>
